@@ -1,5 +1,5 @@
-""" zabawa z kalendarzem """
-from time import sleep, strftime 
+""" Zabawa z kalendarzem 2018-09-10 plus github 2"""
+from time import sleep, strftime
 USER_FIRST_NAME = 'Artur'
 calendar = {}
 
@@ -11,7 +11,7 @@ def welcome():
   print "godzina: " + strftime(" %H : %M : %S")
   sleep(1)
   print "What would you like to do?"
-  
+
 def start_calendar():
   welcome()
   start = True
@@ -24,15 +24,9 @@ def start_calendar():
       else:
         print calendar
     elif user_choice == 'U':
-      date = raw_input("wprowadz date: ")
-      update = raw_input("wprowadz opis dnia: ")
+      date = raw_input("Wprowadz date: ")
+      update = raw_input("Wprowadz opis dnia: ")
       calendar[date] = update
-      print "wprowadzilem poprawkew dniu: " + calendar[date]
+      print "Wprowadzilem poprawkew dniu: " + calendar[date]
     elif user_choice == 'A':
-      event = raw_input("wprowadz date: ")
-      
-      
-      
-     
-
-
+      event = raw_input("Wprowadz date: ")
